@@ -7,19 +7,17 @@
   interface Convert {
     unix: number;
     format_date: string;
-  }
+  };
 
   const convert = () => {
     useNuiEvent('convertUnix', (data: Convert) => {
-      console.log(data.unix)
       const unixTime: number = moment.duration(data.unix, 'milliseconds').as('seconds');
       const date: any|string = moment.unix(unixTime);
       const formated: string = date.format(data.format_date);
-      console.log(formated)
       visibility.set(false);
       fetchNui('returnConvert', formated);
-    })
-  }
+    });
+  };
 
-  convert()
+  convert();
 </script>
