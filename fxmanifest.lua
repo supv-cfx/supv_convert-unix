@@ -1,6 +1,7 @@
 fx_version 'cerulean'
 games {"gta5", "rdr3"}
 lua54 'yes'
+use_experimental_fxv2_oal 'yes'
 
 author 'SUP2Ak#3755'
 version '1.0'
