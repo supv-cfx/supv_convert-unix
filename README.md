@@ -9,3 +9,5 @@ local moment <const> = exports['supv_convert-unix']
 ---@return string
 print(moment:ConvertUnixTime(832716000000)) --> 22/05/1996 
 ```
+
+![GitHub all releases](https://img.shields.io/github/downloads/SUP2Ak/supv_convert-unix/total?color=%2329c785&style=for-the-badge) 
